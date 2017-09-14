@@ -14,6 +14,7 @@
 		B6D1B1641F6AC45A003A2DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D1B1631F6AC45A003A2DA6 /* Assets.xcassets */; };
 		B6D1B1671F6AC45A003A2DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D1B1651F6AC45A003A2DA6 /* LaunchScreen.storyboard */; };
 		B6D1B1721F6AC45A003A2DA6 /* GradPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1711F6AC45A003A2DA6 /* GradPlanTests.swift */; };
+		B6D1B17F1F6AC6EF003A2DA6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B17E1F6AC6EF003A2DA6 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B6D1B16D1F6AC45A003A2DA6 /* GradPlanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradPlanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6D1B1711F6AC45A003A2DA6 /* GradPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradPlanTests.swift; sourceTree = "<group>"; };
 		B6D1B1731F6AC45A003A2DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D1B17E1F6AC6EF003A2DA6 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			children = (
 				B6D1B1631F6AC45A003A2DA6 /* Assets.xcassets */,
 				B6D1B1681F6AC45A003A2DA6 /* Info.plist */,
+				B6D1B17E1F6AC6EF003A2DA6 /* CoreDataStack.swift */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				B6D1B15C1F6AC45A003A2DA6 /* ViewController.swift in Sources */,
 				B6D1B1621F6AC45A003A2DA6 /* GradPlan.xcdatamodeld in Sources */,
 				B6D1B15A1F6AC45A003A2DA6 /* AppDelegate.swift in Sources */,
+				B6D1B17F1F6AC6EF003A2DA6 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
