@@ -15,6 +15,7 @@
 		B6D1B1671F6AC45A003A2DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D1B1651F6AC45A003A2DA6 /* LaunchScreen.storyboard */; };
 		B6D1B1721F6AC45A003A2DA6 /* GradPlanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1711F6AC45A003A2DA6 /* GradPlanTests.swift */; };
 		B6D1B17F1F6AC6EF003A2DA6 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B17E1F6AC6EF003A2DA6 /* CoreDataStack.swift */; };
+		B6D1B1811F709880003A2DA6 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1801F709880003A2DA6 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B6D1B1711F6AC45A003A2DA6 /* GradPlanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradPlanTests.swift; sourceTree = "<group>"; };
 		B6D1B1731F6AC45A003A2DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B6D1B17E1F6AC6EF003A2DA6 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		B6D1B1801F709880003A2DA6 /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				B6D1B17C1F6AC477003A2DA6 /* Storyboards */,
 				B6D1B17D1F6AC485003A2DA6 /* Resources */,
 				B6D1B1601F6AC45A003A2DA6 /* GradPlan.xcdatamodeld */,
+				B6D1B1801F709880003A2DA6 /* LaunchScreen.swift */,
 			);
 			path = GradPlan;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 			files = (
 				B6D1B15C1F6AC45A003A2DA6 /* ViewController.swift in Sources */,
 				B6D1B1621F6AC45A003A2DA6 /* GradPlan.xcdatamodeld in Sources */,
+				B6D1B1811F709880003A2DA6 /* LaunchScreen.swift in Sources */,
 				B6D1B15A1F6AC45A003A2DA6 /* AppDelegate.swift in Sources */,
 				B6D1B17F1F6AC6EF003A2DA6 /* CoreDataStack.swift in Sources */,
 			);
