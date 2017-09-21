@@ -18,4 +18,9 @@ extension Plan {
         self.title = title
     }
     
+    convenience init(title: String, context: NSManagedObjectContext = CoreDataStack.context) {
+        self.init(context: context)
+        self.title = title        
+    }
+    
 }

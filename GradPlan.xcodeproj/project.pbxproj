@@ -18,6 +18,8 @@
 		B6D1B1811F709880003A2DA6 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1801F709880003A2DA6 /* LaunchScreen.swift */; };
 		B6D1B1831F70A25F003A2DA6 /* Plan+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1821F70A25F003A2DA6 /* Plan+Convenience.swift */; };
 		B6D1B1851F70A2B2003A2DA6 /* User+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1841F70A2B2003A2DA6 /* User+Convenience.swift */; };
+		B6D1B1891F74273A003A2DA6 /* PlanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B1881F74273A003A2DA6 /* PlanController.swift */; };
+		B6D1B18C1F7429CB003A2DA6 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D1B18B1F7429CB003A2DA6 /* UserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		B6D1B1801F709880003A2DA6 /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		B6D1B1821F70A25F003A2DA6 /* Plan+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Plan+Convenience.swift"; sourceTree = "<group>"; };
 		B6D1B1841F70A2B2003A2DA6 /* User+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Convenience.swift"; sourceTree = "<group>"; };
+		B6D1B1881F74273A003A2DA6 /* PlanController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanController.swift; sourceTree = "<group>"; };
+		B6D1B18B1F7429CB003A2DA6 /* UserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 				B6D1B17C1F6AC477003A2DA6 /* Storyboards */,
 				B6D1B17D1F6AC485003A2DA6 /* Resources */,
 				B6D1B1861F70A326003A2DA6 /* Model */,
+				B6D1B18A1F742740003A2DA6 /* ModelController */,
 			);
 			path = GradPlan;
 			sourceTree = "<group>";
@@ -141,6 +146,15 @@
 				B6D1B17E1F6AC6EF003A2DA6 /* CoreDataStack.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		B6D1B18A1F742740003A2DA6 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				B6D1B1881F74273A003A2DA6 /* PlanController.swift */,
+				B6D1B18B1F7429CB003A2DA6 /* UserController.swift */,
+			);
+			name = ModelController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,12 +262,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D1B18C1F7429CB003A2DA6 /* UserController.swift in Sources */,
 				B6D1B1831F70A25F003A2DA6 /* Plan+Convenience.swift in Sources */,
 				B6D1B15C1F6AC45A003A2DA6 /* ViewController.swift in Sources */,
 				B6D1B1621F6AC45A003A2DA6 /* GradPlan.xcdatamodeld in Sources */,
 				B6D1B1811F709880003A2DA6 /* LaunchScreen.swift in Sources */,
 				B6D1B15A1F6AC45A003A2DA6 /* AppDelegate.swift in Sources */,
 				B6D1B17F1F6AC6EF003A2DA6 /* CoreDataStack.swift in Sources */,
+				B6D1B1891F74273A003A2DA6 /* PlanController.swift in Sources */,
 				B6D1B1851F70A2B2003A2DA6 /* User+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +482,7 @@
 				B6D1B1781F6AC45A003A2DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6D1B1791F6AC45A003A2DA6 /* Build configuration list for PBXNativeTarget "GradPlanTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +491,7 @@
 				B6D1B17B1F6AC45A003A2DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
