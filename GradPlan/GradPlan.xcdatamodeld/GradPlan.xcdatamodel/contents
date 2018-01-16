@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13533" systemVersion="16G1114" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Details" representedClassName="Details" syncable="YES" codeGenerationType="class">
+        <attribute name="interviewed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="jobTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="salary" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="list" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="List" syncable="YES"/>
+    </entity>
+    <entity name="List" representedClassName="List" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="subName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="list" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Plan" syncable="YES"/>
+    </entity>
     <entity name="Plan" representedClassName="Plan" syncable="YES" codeGenerationType="class">
-        <attribute name="dueDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
-        <attribute name="milestone" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>
-        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="plans" inverseEntity="User" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" syncable="YES"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
         <attribute name="email" attributeType="String" syncable="YES"/>
@@ -12,10 +23,12 @@
         <attribute name="lastName" attributeType="String" syncable="YES"/>
         <attribute name="password" attributeType="String" syncable="YES"/>
         <attribute name="schoolName" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="plans" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Plan" inverseName="user" inverseEntity="Plan" syncable="YES"/>
+        <relationship name="plans" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Plan" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Plan" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Plan" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="User" positionX="-54" positionY="-9" width="128" height="135"/>
+        <element name="List" positionX="-63" positionY="36" width="128" height="90"/>
+        <element name="Details" positionX="-54" positionY="45" width="128" height="135"/>
     </elements>
 </model>

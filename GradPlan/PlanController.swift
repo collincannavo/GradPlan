@@ -32,6 +32,10 @@ class PlanController {
     
     func deletePlan(plan: Plan) {
         
+        let moc = CoreDataStack.context
+        
+        moc.delete(plan)
+        
         saveToPersistentStore()
     
     }
